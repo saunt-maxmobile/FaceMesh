@@ -71,7 +71,7 @@
 		7FC8EE3EA65959D7CDC05E2AD2854A6D /* Pods-FaceMesh-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FaceMesh-acknowledgements.markdown"; sourceTree = "<group>"; };
 		90262F96C79C139063BC9DCECF00B37D /* Pods-FaceMesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceMesh.release.xcconfig"; sourceTree = "<group>"; };
 		9238AFC2F7C2F2258D8654DB605B5417 /* PHLivePhotoPlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PHLivePhotoPlus.swift; path = "ARVideoKit/Rendering/Live Photo/PHLivePhotoPlus.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B33203ECCF809B7170160D412DA6D9D5 /* ARVideoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARVideoKit.release.xcconfig; sourceTree = "<group>"; };
 		BDE1519C196C6199398B538961C8FAAD /* Pods-FaceMesh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceMesh-Info.plist"; sourceTree = "<group>"; };
 		BF453CC971E9464E9343FF88A6796135 /* RecordARDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordARDelegate.swift; path = ARVideoKit/Protocols/RecordARDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		DA31CEA412E6D125B28F7D80A122D063 /* Pods-FaceMesh-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaceMesh-frameworks.sh"; sourceTree = "<group>"; };
 		DF0774D020EFFB0BF7F377EA8A1312EE /* RenderAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderAR.swift; path = ARVideoKit/Rendering/RenderAR.swift; sourceTree = "<group>"; };
 		DFD7A35B67F57F3D5BEB2C210EA50455 /* UIViewController+hasType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+hasType.swift"; path = "ARVideoKit/Extensions/UIViewController+hasType.swift"; sourceTree = "<group>"; };
-		EF201A0FEA60D5BA813829F5C2973695 /* video.scnassets */ = {isa = PBXFileReference; includeInIndex = 1; name = video.scnassets; path = ARVideoKit/Assets/video.scnassets; sourceTree = "<group>"; };
+		EF201A0FEA60D5BA813829F5C2973695 /* video.scnassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.scnassets; name = video.scnassets; path = ARVideoKit/Assets/video.scnassets; sourceTree = "<group>"; };
 		F69AB22AC8C89D593F26792E4430F7EF /* ViewAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAR.swift; path = ARVideoKit/Sources/ViewAR.swift; sourceTree = "<group>"; };
 		FAAABB68A7FA1FB1A251480879617C6A /* ARVideoKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARVideoKit; path = ARVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0A40573002B4B2395F6D9B183788F2 /* ARVideoKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-umbrella.h"; sourceTree = "<group>"; };
@@ -155,7 +155,6 @@
 				369A4C2EA758E081DA5FC71E336E264A /* Resources */,
 				8FEEE11C83C21511176E0135361203EF /* Support Files */,
 			);
-			name = ARVideoKit;
 			path = ARVideoKit;
 			sourceTree = "<group>";
 		};
@@ -303,6 +302,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F45CE91AABA41FC6A2D62AA39C6E4FBD = {
+						LastSwiftMigration = "";
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";

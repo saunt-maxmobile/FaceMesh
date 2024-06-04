@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		50FF1D81AE2913FF9F764DA5 /* Pods_FaceMesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF34C0BFDB3AA8B002314CA /* Pods_FaceMesh.framework */; };
-		83A7D6D42BFC5B4600AB4053 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D6D32BFC5B4600AB4053 /* UIImage+Gif.swift */; };
 		83A7D6F42BFC965400AB4053 /* FaceMeshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D6F32BFC965400AB4053 /* FaceMeshView.swift */; };
+		83AA15F42C09D933003D56C8 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA15F32C09D933003D56C8 /* Node.swift */; };
+		83AA15F62C0D5865003D56C8 /* FacePointConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA15F52C0D5865003D56C8 /* FacePointConfig.swift */; };
 		8B7D4E392221CA4800E0E448 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D4E382221CA4800E0E448 /* ViewController.swift */; };
 		8B7D4E3C2221CA4800E0E448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7D4E3A2221CA4800E0E448 /* Main.storyboard */; };
 		8B7D4E3E2221CA4F00E0E448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7D4E3D2221CA4F00E0E448 /* Assets.xcassets */; };
@@ -22,8 +23,9 @@
 		2C1A9212498578056A1CD232 /* Pods-FaceMesh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceMesh.debug.xcconfig"; path = "Target Support Files/Pods-FaceMesh/Pods-FaceMesh.debug.xcconfig"; sourceTree = "<group>"; };
 		3AF34C0BFDB3AA8B002314CA /* Pods_FaceMesh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceMesh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7458B815183D6686D109B57C /* Pods-FaceMesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceMesh.release.xcconfig"; path = "Target Support Files/Pods-FaceMesh/Pods-FaceMesh.release.xcconfig"; sourceTree = "<group>"; };
-		83A7D6D32BFC5B4600AB4053 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		83A7D6F32BFC965400AB4053 /* FaceMeshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMeshView.swift; sourceTree = "<group>"; };
+		83AA15F32C09D933003D56C8 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		83AA15F52C0D5865003D56C8 /* FacePointConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacePointConfig.swift; sourceTree = "<group>"; };
 		8B7D4E312221CA4800E0E448 /* FaceMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7D4E382221CA4800E0E448 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B7D4E3B2221CA4800E0E448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		83AA15F22C09D92F003D56C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83AA15F32C09D933003D56C8 /* Node.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8B7D4E282221CA4800E0E448 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +88,12 @@
 		8B7D4E332221CA4800E0E448 /* FaceMesh */ = {
 			isa = PBXGroup;
 			children = (
+				83AA15F22C09D92F003D56C8 /* Model */,
 				ABB7C41F29AF54F500711661 /* FaceMeshApp.swift */,
 				ABB7C41E29AF54F500711661 /* ContentView.swift */,
 				83A7D6F32BFC965400AB4053 /* FaceMeshView.swift */,
+				83AA15F52C0D5865003D56C8 /* FacePointConfig.swift */,
 				8B7D4E382221CA4800E0E448 /* ViewController.swift */,
-				83A7D6D32BFC5B4600AB4053 /* UIImage+Gif.swift */,
 				8B7D4E3A2221CA4800E0E448 /* Main.storyboard */,
 				8B7D4E3D2221CA4F00E0E448 /* Assets.xcassets */,
 				8B7D4E3F2221CA4F00E0E448 /* LaunchScreen.storyboard */,
@@ -216,9 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABB7C42029AF54F500711661 /* ContentView.swift in Sources */,
+				83AA15F42C09D933003D56C8 /* Node.swift in Sources */,
 				8B7D4E392221CA4800E0E448 /* ViewController.swift in Sources */,
+				83AA15F62C0D5865003D56C8 /* FacePointConfig.swift in Sources */,
 				83A7D6F42BFC965400AB4053 /* FaceMeshView.swift in Sources */,
-				83A7D6D42BFC5B4600AB4053 /* UIImage+Gif.swift in Sources */,
 				ABB7C42129AF54F500711661 /* FaceMeshApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
